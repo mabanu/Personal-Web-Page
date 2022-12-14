@@ -1,0 +1,145 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+	box-sizing : border-box;
+	position   : relative;
+}
+
+.carrusel-container {
+	align-items     : center;
+	background      : #151515;
+	color           : #fff;
+	display         : flex;
+	justify-content : center;
+	overflow        : hidden;
+	padding         : 5%;
+}
+
+.slides {
+	color   : white;
+	display : grid;
+}
+
+.slides > .slide {
+	grid-area : 1/-1;
+}
+
+.slides > button {
+	-moz-appearance    : none;
+	-webkit-appearance : none;
+	appearance         : none;
+	background         : transparent;
+	border             : none;
+	color              : white;
+	font-size          : 5rem;
+	height             : 5rem;
+	opacity            : 0.7;
+	position           : absolute;
+	top                : 30%;
+	transition         : opacity 0.3s;
+	width              : 5rem;
+	z-index            : 5;
+}
+
+.slides > button:hover {
+	opacity : 1;
+}
+
+.slides > button:focus {
+	outline : none;
+}
+
+.slides > button:first-child {
+	left : -50%;
+}
+
+.slides > button:last-child {
+	right : -50%;
+}
+
+.slideContent {
+	align-content       : center;
+	background-position : center center;
+	background-repeat   : no-repeat;
+	background-size     : cover;
+	display             : grid;
+	height              : 40vw;
+	opacity             : 0.7;
+	transform           : perspective(1000px) translateX(calc(100% * var(--offset))) rotateY(calc(-45deg * var(--dir)));
+	transform-style     : preserve-3d;
+	transition          : transform 0.5s ease-in-out;
+	width               : 30vw;
+}
+
+.slideContentInner {
+	opacity         : 0;
+	text-shadow     : 0 0.1rem 1rem #000;
+	transform       : translateZ(2rem);
+	transform-style : preserve-3d;
+	transition      : opacity 0.3s linear;
+}
+
+.slideContentInner .slideSubtitle,
+.slideContentInner .slideTitle {
+	font-size      : 2rem;
+	font-weight    : bolder;
+	letter-spacing : 0.2ch;
+	margin         : 0;
+	text-transform : uppercase;
+}
+
+.slideContentInner .slideSubtitle::before {
+	content : "— ";
+}
+
+.slideContentInner .slideDescription {
+	font-size      : 0.8rem;
+	letter-spacing : 0.2ch;
+	margin         : 0;
+}
+
+.slideBackground {
+	background-position : center center;
+	background-size     : cover;
+	bottom              : 0;
+	left                : -10%;
+	opacity             : 0;
+	pointer-events      : none;
+	position            : fixed;
+	right               : -10%;
+	top                 : 0;
+	transform           : translateX(calc(10% * var(--dir)));
+	transition          : opacity 0.3s linear, transform 0.3s ease-in-out;
+	z-index             : -1;
+}
+
+.slide[data-active] {
+	pointer-events : auto;
+	z-index        : 2;
+}
+
+.slide[data-active] .slideBackground {
+	opacity   : 0.2;
+	transform : none;
+}
+
+.slide[data-active] .slideContentInner {
+	opacity : 1;
+}
+
+.slide[data-active] .slideContent {
+	--x       : calc(var(--px) - 0.5);
+	--y       : calc(var(--py) - 0.5);
+	opacity   : 1;
+	transform : perspective(1000px);
+}
+
+.slide[data-active] .slideContent:hover {
+	transform  : perspective(1000px) rotateY(calc(var(--x) * 45deg)) rotateX(calc(var(--y) * -45deg));
+	transition : none;
+}
+
+.slideDescription {
+	font-size: 5rem;
+}

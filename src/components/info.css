@@ -1,0 +1,25 @@
+.info {
+	background-color    : white;
+	background-image    : url("../photos/soft-blue-geo.jpg");
+	background-position : center center;
+	background-repeat   : no-repeat;
+	background-size     : cover;
+	color               : black;
+	display             : grid;
+	justify-content     : center;
+	margin              : 0;
+	padding             : 3rem;
+	z-index             : 5;
+}
+
+.info__title {
+	font-size : 4rem;
+	margin    : 0;
+	padding   : 2rem;
+}
+
+.info__description {
+	color          : white;
+	mix-blend-mode : difference;
+	text-align     : center;
+}

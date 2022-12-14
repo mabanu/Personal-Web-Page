@@ -1,0 +1,68 @@
+a, a:hover, a:focus, i, input, button, input:focus, .transition {
+	box-shadow                 : none;
+	outline                    : none;
+	text-decoration            : none;
+	transition-delay           : 0s;
+	transition-duration        : 0.4s;
+	transition-property        : all;
+	transition-timing-function : ease;
+}
+
+a {color : #000}
+
+.ds-header {
+	background-color           : #FFF;
+	padding                    : 30px 0;
+	top                        : 0;
+	transition-delay           : 0s;
+	transition-duration        : 0.4s;
+	transition-property        : all;
+	transition-timing-function : ease;
+	width                      : 100%;
+	z-index                    : 5;
+}
+
+.ds-header-inner {
+	align-items     : center;
+	display         : flex;
+	justify-content : space-between;
+}
+
+.ds-logo {
+	align-items : flex-start;
+	display     : flex;
+	margin-left : 20px;
+	max-width   : 25%; }
+
+.ds-logo:hover { color : #000; }
+
+.ds-social {
+	align-items : center;
+	display     : flex;
+	flex-wrap   : wrap;
+	list-style  : none;
+}
+
+.ds-social li {
+	margin-left : 12px;
+	padding     : 10px
+}
+
+.ds-social li:first-child { margin-left : 0; }
+
+.ds-social li a {
+	align-items      : center;
+	background-color : #272343;
+	border-radius    : 100%;
+	color            : #FFF;
+	display          : flex;
+	font-size        : 25px;
+	height           : 35px;
+	justify-content  : center;
+	text-align       : center;
+	width            : 35px;
+}
+
+.ds-social li a:hover { background-color : #bae8e8;
+	color                                  : #272343;
+}
