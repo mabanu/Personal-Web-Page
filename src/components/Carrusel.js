@@ -13,35 +13,35 @@ const slides = [
     subtitle: 'ASP.NET, Auth0',
     description: 'Solid, Kiss, Dry',
     image:
-      neon,
+    neon,
   },
   {
     title: 'Javascript',
     subtitle: 'Node.JS',
     description: 'Kiss, Dry',
     image:
-      lines,
+    lines,
   },
   {
     title: 'HTML, CSS',
     subtitle: 'Sass, BEM',
     description: 'Kiss, Dry',
     image:
-      trees,
+    trees,
   },
   {
     title: 'React',
     subtitle: 'Tailwind, Auth0',
     description: 'Kiss, Dry',
     image:
-      color,
+    color,
   },
   {
     title: 'AZURE',
     subtitle: 'GitHub Actions',
     description: 'Agile',
     image:
-      grid,
+    grid,
   },
   {
     title: 'TDD',

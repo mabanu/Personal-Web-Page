@@ -1,4 +1,7 @@
-.gallery  {
+.rotate-gallery-container {
+	padding: 0 20px;
+}
+.rotate-gallery  {
 	--s: 250px; /* control the size */
 
 	display: grid;
@@ -10,7 +13,7 @@
 	position: relative;
 	clip-path: circle(49.5%); /* to avoid a few glitch cause by overflow: hidden */
 }
-.gallery::after {
+.rotate-gallery::after {
 	content: "";
 	position: absolute;
 	inset: 0;
@@ -23,7 +26,7 @@
 	-webkit-mask-composite: xor;
 	mask-composite: exclude;
 }
-.gallery > img {
+.rotate-gallery > img {
 	grid-area: 1/1;
 	width: 100%;
 	height: 100%;
@@ -31,13 +34,13 @@
 	border-radius: inherit;
 	transform-origin: 50% 120.7%;
 }
-.gallery::after,
-.gallery > img {
+.rotate-gallery::after,
+.rotate-gallery > img {
 	animation: m 40s infinite cubic-bezier(.1,-0.1,.1,1.1);
 }
-.gallery > img:nth-child(2) {animation-delay: -10s}
-.gallery > img:nth-child(3) {animation-delay: -20s}
-.gallery > img:nth-child(4) {animation-delay: -30s}
+.rotate-gallery > img:nth-child(2) {animation-delay: -10s}
+.rotate-gallery > img:nth-child(3) {animation-delay: -20s}
+.rotate-gallery > img:nth-child(4) {animation-delay: -30s}
 
 @keyframes m {
 	0%,3%    {transform: rotate(0)}
@@ -53,5 +56,5 @@ body {
 	min-height: 100vh;
 	display: grid;
 	place-content: center;
-	background: black;
+	background: transparent;
 }

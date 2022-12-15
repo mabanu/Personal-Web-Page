@@ -6,8 +6,8 @@ import html from '../photos/html.jpg';
 
 function RotateImage() {
   return (
-    <div className="gallery-container">
-      <div className="gallery">
+    <div className="rotate-gallery-container">
+      <div className="rotate-gallery">
         <img src={logo} alt="personal logo" />
         <img src={react} alt="react logo" />
         <img src={html} alt="html logo" />

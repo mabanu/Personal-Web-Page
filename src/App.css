@@ -4,3 +4,11 @@
 	font-family : "Libre Caslon Display", sans-serif;
 	text-align  : center;
 }
+
+.colmena-gallery-container {
+	display: grid;
+	justify-content: center;
+	padding: 50px 0;
+	background-color: black;
+	z-index: 5;
+}
