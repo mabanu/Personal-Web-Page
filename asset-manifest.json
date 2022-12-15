@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Web-Page/static/css/main.66380b3e.css",
-    "main.js": "/Personal-Web-Page/static/js/main.bfd07243.js",
+    "main.css": "/Personal-Web-Page/static/css/main.aafe66f8.css",
+    "main.js": "/Personal-Web-Page/static/js/main.bd9010d7.js",
     "static/media/lines.jpg": "/Personal-Web-Page/static/media/lines.03fd5e3e5fd8d912f7c5.jpg",
     "static/media/neon-paradise.jpg": "/Personal-Web-Page/static/media/neon-paradise.ec39c2167e4557721342.jpg",
     "static/media/color.jpg": "/Personal-Web-Page/static/media/color.09063af07215717047da.jpg",
@@ -11,11 +11,11 @@
     "static/media/purple-grid.jpg": "/Personal-Web-Page/static/media/purple-grid.515e142969b368b731a1.jpg",
     "static/media/soft-blue-geo.jpg": "/Personal-Web-Page/static/media/soft-blue-geo.ab2ac3eb2b1055a14ee2.jpg",
     "index.html": "/Personal-Web-Page/index.html",
-    "main.66380b3e.css.map": "/Personal-Web-Page/static/css/main.66380b3e.css.map",
-    "main.bfd07243.js.map": "/Personal-Web-Page/static/js/main.bfd07243.js.map"
+    "main.aafe66f8.css.map": "/Personal-Web-Page/static/css/main.aafe66f8.css.map",
+    "main.bd9010d7.js.map": "/Personal-Web-Page/static/js/main.bd9010d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.66380b3e.css",
-    "static/js/main.bfd07243.js"
+    "static/css/main.aafe66f8.css",
+    "static/js/main.bd9010d7.js"
   ]
 }
