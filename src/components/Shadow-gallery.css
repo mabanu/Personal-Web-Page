@@ -1,0 +1,146 @@
+html {
+	box-sizing : border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing : inherit;
+}
+
+.shadow-container {
+	background-color : #18222d;
+	font-size        : 1rem;
+	line-height      : 1.25;
+	margin           : 0;
+	min-height       : 100vh;
+	z-index          : 5;
+	overflow         : hidden;
+}
+
+.grid {
+	-webkit-box-direction : normal;
+	-webkit-box-orient    : horizontal;
+	display               : flex;
+	flex-direction        : row;
+	flex-wrap             : wrap;
+	margin-left           : auto;
+	margin-right          : auto;
+	max-width             : 60rem;
+	width                 : 100%;
+}
+
+.grid-block {
+	min-height : 11.25rem;
+	padding    : 1rem;
+	width      : 50%;
+}
+
+.image-grid {
+	-webkit-perspective : 1000px;
+	perspective         : 1000px;
+	-webkit-transform   : rotateX(45deg) rotateZ(45deg);
+	transform           : rotateX(45deg) rotateZ(45deg);
+}
+
+.image-grid .tile-link:hover .tile-img {
+	left : -1rem;
+	top  : -1rem;
+}
+
+.image-grid .tile-img {
+	left                        : 0;
+	position                    : relative;
+	top                         : 0;
+	-webkit-transition-property : opacity, top, left, box-shadow;
+	transition-property         : opacity, top, left, box-shadow;
+}
+
+.tile-link {
+	display : block;
+}
+
+.tile-link:hover .tile-img {
+	opacity : 1;
+}
+
+.tile-link:hover .tile-img-link {
+	display : block;
+}
+
+.tile-link:hover .tile-img-link:hover .tile-img {
+	opacity : 0.5;
+}
+
+.tile-img {
+	display                            : block;
+	height                             : auto;
+	opacity                            : 1;
+	-webkit-transition-duration        : 0.125s;
+	transition-duration                : 0.125s;
+	-webkit-transition-property        : opacity;
+	transition-property                : opacity;
+	-webkit-transition-timing-function : ease-in;
+	transition-timing-function         : ease-in;
+	width                              : 100%;
+}
+
+.tile-link:hover .tile-img1 {
+	box-shadow : 5px 5px rgba(244, 170, 200, 0.4),
+	10px 10px rgba(244, 170, 200, 0.3), 15px 15px rgba(244, 170, 200, 0.2),
+	20px 20px rgba(244, 170, 200, 0.1), 25px 25px rgba(244, 170, 200, 0.05);
+}
+
+.tile-link:hover .tile-img2 {
+	box-shadow : 5px 5px rgba(45, 186, 233, 0.4), 10px 10px rgba(45, 186, 233, 0.3),
+	15px 15px rgba(45, 186, 233, 0.2), 20px 20px rgba(45, 186, 233, 0.1),
+	25px 25px rgba(45, 186, 233, 0.05);
+}
+
+.tile-link:hover .tile-img3 {
+	box-shadow : 5px 5px rgba(214, 221, 244, 0.4),
+	10px 10px rgba(214, 221, 244, 0.3), 15px 15px rgba(214, 221, 244, 0.2),
+	20px 20px rgba(214, 221, 244, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+}
+
+.tile-link:hover .tile-img4 {
+	box-shadow : 5px 5px rgba(82, 119, 192, 0.4), 10px 10px rgba(82, 119, 192, 0.3),
+	15px 15px rgba(82, 119, 192, 0.2), 20px 20px rgba(82, 119, 192, 0.1),
+	25px 25px rgba(82, 119, 192, 0.05);
+}
+
+.tile-link:hover .tile-img5 {
+	box-shadow : 5px 5px rgba(138, 218, 245, 0.4),
+	10px 10px rgba(138, 218, 245, 0.3), 15px 15px rgba(138, 218, 245, 0.2),
+	20px 20px rgba(138, 218, 245, 0.1), 25px 25px rgba(138, 218, 245, 0.05);
+}
+
+.tile-link:hover .tile-img6 {
+	box-shadow : 5px 5px rgba(203, 215, 193, 0.4),
+	10px 10px rgba(203, 215, 193, 0.3), 15px 15px rgba(203, 215, 193, 0.2),
+	20px 20px rgba(203, 215, 193, 0.1), 25px 25px rgba(203, 215, 193, 0.05);
+}
+
+.tile-link:hover .tile-img7 {
+	box-shadow : 5px 5px rgba(91, 209, 250, 0.4), 10px 10px rgba(91, 209, 250, 0.3),
+	15px 15px rgba(91, 209, 250, 0.2), 20px 20px rgba(91, 209, 250, 0.1),
+	25px 25px rgba(91, 209, 250, 0.05);
+}
+
+.tile-link:hover .tile-img8 {
+	box-shadow : 5px 5px rgba(145, 156, 196, 0.4),
+	10px 10px rgba(145, 156, 196, 0.3), 15px 15px rgba(145, 156, 196, 0.2),
+	20px 20px rgba(145, 156, 196, 0.1), 25px 25px rgba(145, 156, 196, 0.05);
+}
+
+.tile-link:hover .tile-img9 {
+	box-shadow : 5px 5px rgba(188, 97, 129, 0.4), 10px 10px rgba(188, 97, 129, 0.3),
+	15px 15px rgba(188, 97, 129, 0.2), 20px 20px rgba(188, 97, 129, 0.1),
+	25px 25px rgba(188, 97, 129, 0.05);
+}
+
+.tile-link:hover .tile-img10 {
+	box-shadow : 5px 5px rgba(4, 140, 231, 0.4), 10px 10px rgba(4, 140, 231, 0.3),
+	15px 15px rgba(4, 140, 231, 0.2), 20px 20px rgba(4, 140, 231, 0.1),
+	25px 25px rgba(4, 140, 231, 0.05);
+}
