@@ -16,6 +16,7 @@ html {
 	min-height       : 100vh;
 	z-index          : 5;
 	overflow         : hidden;
+	padding: 40px 0;
 }
 
 .grid {
@@ -39,8 +40,8 @@ html {
 .image-grid {
 	-webkit-perspective : 1000px;
 	perspective         : 1000px;
-	-webkit-transform   : rotateX(45deg) rotateZ(45deg);
-	transform           : rotateX(45deg) rotateZ(45deg);
+	-webkit-transform   : rotateX(45deg) rotateZ(45deg) rotateY(0deg);
+	transform           : rotateX(45deg) rotateZ(45deg) rotateY(0deg);
 }
 
 .image-grid .tile-link:hover .tile-img {
