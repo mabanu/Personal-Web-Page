@@ -2,7 +2,6 @@ import './Colmena.css';
 
 function Colmena() {
   return (
-
     <div className="colmena-gallery">
       <img src="https://picsum.photos/id/1040/300/300" alt="a house on a mountain" />
       <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers" />
